@@ -1,0 +1,70 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <nav>
+            <a href="index.html"><p>Home</p></a>
+            <a href="news.html"><p>News</p></a>
+            <a href="resume.pdf"><p>CV</p></a>
+           
+        </nav>
+
+        <div id="progressBar"></div>
+        
+        <div class="news">
+            <h1>News</h1>
+            <div class="news_section">
+                <h3>Spring 2024</h3>
+                <div class="news_item">
+                    <div class="date">
+                        <p>May 2024</p>
+                    </div>
+                    <p>Finished Spring 2024 Semester</p>
+                </div>
+
+                <div class="news_item">
+                    <div class="date">
+                        <p>May 2024</p>
+                    </div>
+                    <p>Started Summer Position as Undergraduate Teaching Assistant</p>
+                </div>
+
+                <div class="news_item">
+                    <div class="date">
+                        <p>March 2024</p>
+                    </div>
+                    <p>Started Mobile App Developer Position with GWU BME Department</p>
+                </div>
+            </div>
+        </div>
+
+       
+    </body>
+    <script>
+
+window.addEventListener('scroll', function() {
+  var scrollTop = document.body.scrollTop;
+  var height = document.body.scrollHeight - document.body.clientHeight;
+  var scrolled = (scrollTop/height) * 100;
+  
+
+  console.log('ScrollTop:', scrollTop);
+  console.log('ScrollHeight:', height);
+
+  // Prevent division by zero
+
+
+  console.log('Scrolled:', scrolled);
+
+  var progressBar = document.getElementById('progressBar');
+  progressBar.style.width = scrolled + '%';
+});
+
+function redirect(link){
+    window.location.replace(link);
+}
+
+
+    </script>
+</html>
