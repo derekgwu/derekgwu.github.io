@@ -19,7 +19,7 @@ nav{
 }
 
 #progressBar {
-    width: 40%;
+    width: 0%;
     position: fixed;
     top: 15vh;
     left: 0;
@@ -50,7 +50,7 @@ nav{
 }
 
 .home_img{
-    width: 1%;
+    width: 40%;
     padding: 5%;
     
 }
